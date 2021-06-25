@@ -1,9 +1,10 @@
 version: 0.2
 
 phases:
-
-  build:
+  install:
     commands:
       - npm ci
+  build:
+    commands:
       - npm run build
       - npm run cdk -- deploy --ci --execute
