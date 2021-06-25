@@ -16,7 +16,7 @@ class BonjourFargate extends cdk.Stack {
     new ecs_patterns.ApplicationLoadBalancedFargateService(this, "FargateService", {
       cluster,
       taskImageOptions: {
-        image: ecs.ContainerImage.fromRegistry("amazon/amazon-ecs-sample2"),
+        image: ecs.ContainerImage.fromRegistry("amazon/amazon-ecs-sample"),
       },
     });
   }
