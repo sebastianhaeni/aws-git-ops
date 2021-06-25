@@ -6,4 +6,4 @@ phases:
     commands:
       - npm ci
       - npm run build
-      - npm run cdk deploy --ci --execute
+      - npm run cdk -- deploy --ci --execute
