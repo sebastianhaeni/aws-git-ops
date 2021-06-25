@@ -1,0 +1,12 @@
+version: 0.2
+
+phases:
+
+  build:
+    commands:
+      - npm ci
+      - npm run build
+
+  deploy:
+    commands:
+      - npm run cdk deploy --ci --execute
